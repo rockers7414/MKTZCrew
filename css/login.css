@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: '微軟正黑體', '儷黑Pro', 'Ubuntu';
+    background: #000;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+}
+
+#main {
+    margin: auto;
+    width: 980px;
+}
+
+#dialog, #registdialog {
+    margin: 200px auto 0 auto;
+    text-align: center;
+    width: 300px;
+    padding: 20px 0 20px 0;
+    font-size: 18px;
+    border: 1px #AAA solid;
+    -moz-box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#dialog a, #registdialog a {
+    font-weight: bold;
+    display: inline-block;
+    margin: 5px 0 0 0px;
+    height: 22px;
+    width: 65px;
+    border: 1px #AAAAAA solid;
+    background-color: #CCCCCC;
+    font-size: 16px;
+    color: #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#dialog a:hover, #registdialog a:hover {
+    font-weight: bold;
+    background-color: #FFF;
+    color: #000;
+    border: 1px #AAAAAA solid;
+    font-size: 16px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 0 15px #CCC;
+    -webkit-box-shadow: inset 0 0 15px #CCC;
+    box-shadow: inset 0 0 15px #CCC;
+}
+
+#dialog input {
+    margin-top: 5px;
+}
+
+#dialog img {
+    margin-bottom: 10px;
+}
+
+#dialog p, #registdialog p {
+    font-size: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #777;
+}

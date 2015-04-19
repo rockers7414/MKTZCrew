@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="/css/jquery.jqplot.min.css" />
+        <link type="text/css" rel="stylesheet" href="/css/index.css" />
+        <script type="text/javascript" src="/script/jquery.min.js"></script>
+        <script type="text/javascript" src="/script/jquery.md5.js"></script>
+        <script type="text/javascript" src="/script/jquery.jqplot.min.js"></script>
+        <script type="text/javascript" src="/script/jquery.json-2.4.min.js"></script>
+        <script type="text/javascript" src="/script/jqplot.pieRenderer.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="/css/jquery.cleditor.css" />
+        <script type="text/javascript" src="/script/jquery.cleditor.min.js"></script>
+        <script type="text/javascript" src="/script/index.js"></script>
+        {% if isAdmin %}
+        <script type="text/javascript" src="/script/index.admin.js"></script>
+        {% endif %}
+        {% if isSystemAdmin %}
+        <script type="text/javascript" src="/script/index.systemadmin.js"></script>
+        {% endif %}
+        <title>廟口太子幫官方網站 MKTZCrew</title>
+    </head>
+    <body>
+        
+        <div id="logoutdiv">
+            {{ memberName }}, 您好 | <a id="logout" href="javascript:void(0);">登出</a>
+        </div>
+        <div id="main">
+            <div id="logo">
+                <a href="/"><img src="/css/MKTZ_LOGO2.jpg"></a>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a id="home" href="javascript:void(0);">首頁</a></li>
+                    <li><a id="rank" href="javascript:void(0);">排行榜</a></li>
+                    <li><a id="jobratio" href="javascript:void(0);">職業比例</a></li>
+                    <li><a id="claninfo" href="javascript:void(0);">血盟資料</a></li>
+                    <li><a id="file" href="javascript:void(0);">檔案下載</a></li>
+                    <li><a id="post" href="javascript:void(0);">留言板</a></li>
+                    {% if isMember %}
+                    <li><a id="membercentermgr" href="javascript:void(0);">個人資料管理</a></li>  
+                    {% endif %}
+                    {% if isAdmin %}
+                    <li><a id="announcementmgr" href="javascript:void(0);">公告管理</a></li>
+                    <li><a id="membermgr" href="javascript:void(0);">血盟成員資料管理</a></li>
+                    {% endif %}
+                    {% if isSystemAdmin%}
+                    <li><a id="announcementmgr" href="javascript:void(0);">公告管理</a></li>
+                    <li><a id="membermgr" href="javascript:void(0);">血盟成員資料管理</a></li>
+                    <li><a id="filemgr" href="javascript:void(0);">檔案連結及公告管理</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+            <div id="center">
+                {{ center }}
+            </div>
+            <div id="footer">
+                <p>建議使用Google Chrome, Firefox瀏覽本網站<br/>
+                Copyright© 2014 RCK All Rights Reserved.</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    font-family: '微軟正黑體', '儷黑Pro', 'Ubuntu';
+    background: #000;
+}
+
+a, a:active, a:visited {
+    text-decoration: none;
+}
+
+#main {
+    margin: auto;
+    width: 980px;
+}
+
+#menu ul, #joblist ul, #submenu ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+#menu a, #joblist a, #submenu a {
+    color: #FFF;
+}
+
+#menu > ul > li, #joblist > ul > li, #submenu > ul > li {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+#main {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 970px;
+}
+
+#logoutdiv {
+    text-align: right;
+    margin: auto;
+    width: 970px;
+    color: #AAA;
+}
+
+#logoutdiv a {
+    color: #FFF;
+}
+
+#menu, #center, #footer {
+    margin: auto;
+}
+
+#menu {
+    min-height: 30px;
+    border-bottom: 1px #BBBBBB solid;
+    margin-bottom: 5px;
+    -webkit-box-shadow:0 8px 6px -6px #999;
+    -moz-box-shadow:0 8px 6px -6px #999;
+    box-shadow:0 8px 6px -6px #999;
+    background-color: #444;
+}
+
+#menu a:hover, a:hover{
+    color: #F63;
+}
+
+#joblist, #submenu {
+    text-align: right;
+    font-size: 18px;
+    float: right;
+}
+
+#joblist a, #submenu a {
+    color: #F90;
+}
+
+#joblist > ul > li, #submenu  > ul > li {
+    margin-left: 20px;
+}
+
+#center {
+    min-height: 620px;
+    border-bottom: 1px #BBBBBB solid;
+    margin-bottom: 5px;
+    margin-top: 8px;
+    -webkit-box-shadow:0 8px 6px -6px #999;
+    -moz-box-shadow:0 8px 6px -6px #999;
+    box-shadow:0 8px 6px -6px #999;
+    background-color: #222
+    overflow: auto;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    color: #FFF;
+    background-color: #444;
+    padding: 1px;
+    margin-top: 8px;
+}
+
+#averdiv {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 18px;
+    color: red;
+}
+
+#list {
+    border: 1px #BBB solid;
+    width: 700px;
+    margin: 10px auto;
+    -moz-box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    border-collapse:collapse;
+    clear: both;
+}
+
+#list td, #list th {
+    border: 1px #BBB solid;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(248,248,255,0.4);
+    color: gainsboro;
+}
+
+#list th {
+    background-color: #EEE;
+    color: black;
+}
+
+
+#form, #modifycontent {
+    margin: 0px auto;
+    width: 600px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border: 1px #AAA solid;
+    -moz-box-shadow: 0 0 10px #999;
+    -webkit-box-shadow: 0 0 10px #999;
+    box-shadow: 0 0 10px #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    color: #FFF;
+    overflow: auto;
+    clear: both;
+    text-align: left;
+}
+
+#updatediv {
+    text-align: center;
+}
+
+#form > div > a, #modifycontent > a {
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 12px 10px;
+    height: 22px;
+    width: 65px;
+    border: 1px #AAAAAA solid;
+    background-color: #CCCCCC;
+    font-size: 16px;
+    color: #000;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    float: right;
+}
+
+#form select {
+    height: 23px;
+}
+
+#form > div > a:hover, #modifycontent > a:hover {
+    font-weight: bold;
+    background-color: #FFF;
+    color: #000;
+    border: 1px #AAAAAA solid;
+    font-size: 16px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-box-shadow: inset 0 0 15px #CCC;
+    -webkit-box-shadow: inset 0 0 15px #CCC;
+    box-shadow: inset 0 0 15px #CCC;
+}
+
+#form input, #form select {
+    margin-right: 5px;
+    width: 100px;
+}
+
+#list p {
+    margin: 0;
+    color: lightgrey;
+    font-size: small;
+}
+
+.rank {
+    background-repeat: no-repeat;
+    background-image: url('/css/rank.jpg');
+    background-position: right bottom;
+}
+
+.home {
+    background-repeat: no-repeat;
+    background-image: url('/css/home.jpg');
+    background-position: right bottom;
+}
+
+.claninfo {
+    background-repeat: no-repeat;
+    background-image: url('/css/claninfo.jpg');
+    background-position: right bottom;
+}
+
+.file {
+    background-repeat: no-repeat;
+    background-image: url('/css/file.jpg');
+    background-position: right bottom;
+}
+
+.membercenter {
+    background-repeat: no-repeat;
+    background-image: url('/css/membercenter.jpg');
+    background-position: right bottom;
+}
+
+.jobratio {
+    background-repeat: no-repeat;
+    background-image: url('/css/jobratio.jpg');
+    background-position: bottom center;
+} 
+
+.hometitle {
+    background-repeat: no-repeat;
+    background-image: url('/css/announcement.png');
+    min-height: 70px;
+    background-position: center;
+}
+
+.ranktitle {
+    background-repeat: no-repeat;
+    background-image: url('/css/rank.png');
+    min-height: 350px;
+    width: 135px;
+    float: left;
+}
+
+.claninfotitle {
+    background-repeat: no-repeat;
+    background-image: url('/css/claninfo.png');
+    display: inline-block;
+    min-height: 450px;
+    width: 135px;
+    float: left;
+}
+
+.jobratiotitle {
+    background-repeat: no-repeat;
+    background-image: url('/css/jobratio.png');
+    background-position: left center;
+    min-height: 115px;
+}
+
+.filetitle {
+    background-repeat: no-repeat;
+    background-image: url('/css/file.png');
+    display: inline-block;
+    min-height: 470px;
+    width: 135px;
+    float: left;
+}
